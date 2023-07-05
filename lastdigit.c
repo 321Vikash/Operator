@@ -1,15 +1,13 @@
-/* Programmer :Vikash Kumar Thakur
-   Topic      :WAP to print a given number without its last digit
-   Language   :C
-   Date       :04/07/2023
+/* Programmer :Vikash Kumar Thakur 
+   Topic      :WAP to make the last digit of a number stored in a variable as zero.(Example if x=2345 then make it x=2340)
+   IDE        :VS Code
+   Date       :06 July 2023
 */
 #include <stdio.h>
 int main()
 {
-    int a, b;
-    printf("Enter the integer: ");
-    scanf("%d", &a);
-    b = a / 10;
-    printf("Last digit %d is :%d", a, b);
+    int a, num = 2345;
+    a = num / 10 * 10;
+    printf("The last digit is :%d", a);
     return 0;
 }
